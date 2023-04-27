@@ -1,0 +1,13 @@
+.nav-container {
+    display: flex;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    gap: 40px;
+    padding: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: green;
+}
+
