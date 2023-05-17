@@ -2,6 +2,8 @@ import React from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import { Link } from 'react-router-dom';
+import lakeimg from '../../assets/lake-image.png';
+import './MainPage.css';
 
 const MainPage = () => {
   return (
@@ -11,11 +13,12 @@ const MainPage = () => {
           <h3>Your Journey Begins</h3>
           <h4>Miles with Mal will take you through tips, tricks, and trip itineraries</h4>
           <Link to="/about">
-          <button>About Mal</button>
+          <button className='about-me-button'>About Mal</button>
           </Link>
         </div>
 
         <div id='main-page-section' className='main-page-section-two'>
+          <img src= {lakeimg} alt="lakeimg" />
           <h4>Where to next?</h4>
           <Link to="/trips">
           <button>Explore the World</button>

@@ -1,7 +1,19 @@
 require("dotenv").config();
+const { findAllByTestId } = require("@testing-library/react");
 const express = require('express');
 
-const { SERVER_PORT } = process.env;
+const { Sequelize } = require("sequelize");
+
+const { SERVER_PORT, CONNECTION_STRING } = process.env;
+
+const sequelize = new Sequelize(CONNECTION_STRING, {
+    dialect: "postgres", 
+    dialectOptions: {
+        ssl: {
+            rejectUnauthorized: false,
+        },
+    },
+});
 
 const app = express();
 
