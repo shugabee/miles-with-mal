@@ -1,5 +1,4 @@
 require("dotenv").config();
-const { findAllByTestId } = require("@testing-library/react");
 const express = require('express');
 
 const { Sequelize } = require("sequelize");
