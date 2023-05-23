@@ -3,6 +3,7 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import { Link } from 'react-router-dom';
 import lakeimg from '../../assets/lake-image.png';
+import palm from '../../assets/palm-img.jpg';
 import './MainPage.css';
 
 const MainPage = () => {
@@ -18,21 +19,25 @@ const MainPage = () => {
         </div>
 
         <div id='main-page-section' className='main-page-section-two'>
-          <img src= {lakeimg} alt="lakeimg" />
-          <h4>Where to next?</h4>
-          <Link to="/trips">
-          <button>Explore the World</button>
-          </Link>
+          <div> 
+            <img src= {lakeimg} alt="lakeimg" />
+          </div>
+          <div>
+            <h4>Where to next?</h4>
+            <Link to="/trips">
+            <button className='explore-the-world-button'>Explore the World</button>
+            </Link>
+          </div>
         </div>
 
         
         <div id='main-page-section' className='main-page-section-three'>
-          <div>
+          <div className='main-page-section-three-text'>
             <h4>Discover Unlimited Beauty</h4>
             <h5>Meet different people, cultures, traditions and landscapes. Choose your next destination.</h5>
           </div>
           <div>
-            <img />
+            <img src= {palm} alt="palmimg" />
           </div>
         </div>
        

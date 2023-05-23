@@ -19,10 +19,10 @@
 }
 
 .about-me-button {
-    height: 5vh;
-    width: 7vw;
+    height: 6vh;
+    width: 8vw;
     border-style: hidden;
-    border-radius: 10px;
+    border-radius: 8px;
     background-color: rgb(255, 255, 255);
     font-size: 16px;
     font-weight: bold;
@@ -31,4 +31,67 @@
 .about-me-button:hover {
     color: green;
     cursor: pointer;
+}
+
+.main-page-section-two {
+    padding-top: 200px;
+    box-sizing: border-box;
+    align-items: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.main-page-section-two h4 {
+    font-size: 30px;
+}
+
+.main-page-section-two img {
+    height: 60vh;
+}
+
+.explore-the-world-button {
+    height: 7vh;
+    width: 14vw;
+    border-style: hidden;
+    border-radius: 8px;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.explore-the-world-button:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+.main-page-section-three {
+    padding-top: 100px;
+    display: flex;
+    height: 70vh;
+}
+
+.main-page-section-three-text {
+    background-color: black;
+    color: white;
+    width: 50%;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+}
+
+.main-page-section-three-text h4 {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.main-page-section-three-text h5 {
+    font-size: 20px;
+}
+
+.main-page-section-three img {
+    height: 100%;
 }
